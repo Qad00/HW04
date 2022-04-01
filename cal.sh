@@ -1,23 +1,23 @@
 #!bin/bash
 
 
-let a=$(<num1.txt)   
-let b=$(<num2.txt) 
+declare -a nums
+nums=($(<num1.txt) $(<num2.txt))
 
 calculate() {
   echo ""
-  echo "num1: $a"
-  echo "num2: $b"
+  echo "num1: ${nums[0]}"
+  echo "num2: ${nums[1]}"
 
   case $envOp in 
     1) echo "op: add"
-       let result=$a+$b;;
+       let result=${nums[0]}+${nums[1]};;
     2) echo "op: sub"
-       let result=$a-$b;;  
+       let result=${nums[0]}-${nums[1]};;  
     3) echo "op: div"
-       let result=$a/$b;;  
+       let result=${nums[0]}/${nums[1]};;  
     4) echo "op: mul"
-       let result=$a*$b;;
+       let result=${nums[0]}*${nums[1]};;
     *) echo "Invalid choice!"; exit 1;;
   esac
   
