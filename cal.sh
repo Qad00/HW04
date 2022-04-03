@@ -1,5 +1,6 @@
 #!bin/bash
 
+echo "project management in github" 
 
 declare -a nums
 nums=($(<num1.txt) $(<num2.txt))
