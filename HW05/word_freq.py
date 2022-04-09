@@ -27,4 +27,4 @@ key_list = [x[0] for x in sortedList]
 val_list = [x[1] for x in sortedList]
  
 for i in range(int(sys.argv[2])): 
-	print(key_list[i], val_list[i])  
+	print('{:<s}{:>{width}}'.format(key_list[i], val_list[i],width = 10))  
