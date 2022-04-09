@@ -21,13 +21,11 @@ for word in list_of_words:
 	dictionary[word] = dictionary.get(word, 0) + 1
 
 
-print()
-print()
 sortedList = sorted(dictionary.items(), key = lambda kv:(kv[1], kv[0]), reverse=True)
 	
 key_list = [x[0] for x in sortedList]
 val_list = [x[1] for x in sortedList] 
-
- 
 print(key_list)
-print(val_list) 
+print(val_list)
+for i in range(int(sys.argv[2])): 
+	print(key_list[i], val_list[i])  
