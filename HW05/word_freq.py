@@ -15,17 +15,14 @@ if __name__=='__main__':
 		exit()
 
 
-print(list_of_words)
-print() 
 
 dictionary = {}
 for word in list_of_words:
 	dictionary[word] = dictionary.get(word, 0) + 1
 
 
-print(dictionary)
 print()
 
-sortedDic = sorted(dictionary.items(), key = lambda kv:(kv[1], kv[0]))
+sortedDic = sorted(dictionary.items(), key = lambda kv:(kv[1], kv[0]), reverse=True)
 print("sorted dictionary by values")
 print(sortedDic) 
