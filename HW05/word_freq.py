@@ -24,8 +24,7 @@ for word in list_of_words:
 sortedList = sorted(dictionary.items(), key = lambda kv:(kv[1], kv[0]), reverse=True)
 	
 key_list = [x[0] for x in sortedList]
-val_list = [x[1] for x in sortedList] 
-print(key_list)
-print(val_list)
+val_list = [x[1] for x in sortedList]
+ 
 for i in range(int(sys.argv[2])): 
 	print(key_list[i], val_list[i])  
