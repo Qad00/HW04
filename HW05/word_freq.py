@@ -23,6 +23,11 @@ for word in list_of_words:
 
 print()
 print()
-sortedDic = sorted(dictionary.items(), key = lambda kv:(kv[1], kv[0]), reverse=True)
-print("sorted dictionary by values")
-print(sortedDic) 
+sortedList = sorted(dictionary.items(), key = lambda kv:(kv[1], kv[0]), reverse=True)
+	
+key_list = [x[0] for x in sortedList]
+val_list = [x[1] for x in sortedList] 
+
+ 
+print(key_list)
+print(val_list) 
