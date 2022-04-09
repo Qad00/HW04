@@ -1,1 +1,5 @@
-text file for testing
+Roger-federer, Rafael nadal, Novak Djokovic,Andy murray
+Hi there!, - t Welcome to datagy!
+See you in next class=
+Today we are learning how to read text files.
+GOod practice for- addting some delimeter cahraters 
