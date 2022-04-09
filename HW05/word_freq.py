@@ -23,4 +23,9 @@ for word in list_of_words:
 	dictionary[word] = dictionary.get(word, 0) + 1
 
 
-print(dictionary) 
+print(dictionary)
+print()
+
+sortedDic = sorted(dictionary.items(), key = lambda kv:(kv[1], kv[0]))
+print("sorted dictionary by values")
+print(sortedDic) 
